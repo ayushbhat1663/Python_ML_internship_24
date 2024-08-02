@@ -1,0 +1,8 @@
+import numpy as np
+scores = np.array([[85, 90, 78],
+                   [92, 88, 95],
+                   [76, 95, 92],
+                   [90, 85, 92],
+                   [88, 76, 89]])
+sorted_scores = np.sort(scores,axis=0)
+print(sorted_scores)
