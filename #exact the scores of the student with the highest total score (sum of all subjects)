@@ -1,0 +1,8 @@
+import numpy as np
+scores = np.array([[85, 90, 78],
+                   [92, 88, 95],
+                   [76, 95, 92],
+                   [90, 85, 92],
+                   [88, 76, 89]])
+highest_scores = np.max(scores, axis=1)
+print("Highest scores for each student:", highest_scores)
