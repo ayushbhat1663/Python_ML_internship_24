@@ -1,0 +1,11 @@
+import numpy as np
+scores = np.array([[85, 90, 78],
+                   [92, 88, 95],
+                   [76, 95, 92],
+                   [90, 85, 92],
+                   [88, 76, 89]])
+median_of_subjects = np.median(scores, axis=0)
+print("Median scores for each subject:")
+print("Math:", median_of_subjects[0])
+print("Science:", median_of_subjects[1])
+print("English:", median_of_subjects[2])
