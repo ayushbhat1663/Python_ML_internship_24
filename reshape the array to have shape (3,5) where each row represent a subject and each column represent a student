@@ -1,0 +1,9 @@
+import numpy as np
+scores = np.array([[85, 90, 78],
+                   [92, 88, 95],
+                   [76, 95, 92],
+                   [90, 85, 92],
+                   [88, 76, 89]])
+reshaped_scores = scores.T
+reshaped = reshaped_scores.reshape((3,5))
+print(reshaped_scores)
