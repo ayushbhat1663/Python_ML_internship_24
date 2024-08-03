@@ -5,6 +5,7 @@ for i in range(1, n + 1):
 
 QUESTION NUMBER 2 
 def input_div():
+        while:
         try:
             nume = int(input("Enter the numerator: "))
             deno = int(input("Enter the denominator: "))
