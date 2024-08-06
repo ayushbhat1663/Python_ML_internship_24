@@ -46,3 +46,15 @@ plt.title("Wheel Base VS Engine Size")
 plt.ylabel("Wheel Base")
 plt.xlabel("Engine Size")
 plt.show()
+
+
+
+plt.figure(figsize=(20,8))
+sns.set(rc={"axes.facecolor":"#FFFFFF","axes.grid":False ,"xtick.labelsize":10, "ytick.labelsize":10})
+plt.title("class VS who")
+plt.xlabel("class")
+plt.ylabel("who")
+plt.xticks(rotation=45)
+
+sns.lineplot(x=auto["age"],y=auto["who"] . index.values,color='r')
+plt.show()
