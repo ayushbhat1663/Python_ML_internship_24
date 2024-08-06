@@ -1,0 +1,48 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as pit
+import matplotlib as mpl
+import seaborn as sns
+import os
+%matplotlib inline
+
+
+
+auto = pd.read_csv("Automobile_data.csv")
+auto.head()
+
+
+
+brandVSfuel=auto.groupby(["make","fuel-type"]).size().unstack(fill_value=0)
+brandVSfuel
+
+
+
+brandVSfuel.plot(kind='bar',stacked=True)
+plt.show()
+
+
+
+brandVSprice=auto.groupby(["brand","price"]).size().unstack(fill_value=0)
+brandVSprice
+
+
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import seaborn as sns
+import os
+%matplotlib inline
+
+
+
+
+plt.figure(figsize=(20,8))
+sns.lineplot(data=auto["wheel-base"],linewidth=1.5,label="Wheel Base")
+sns.lineplot(data=auto["engine-size"],linewidth=1.5,label="Engine size")
+plt.title("Wheel Base VS Engine Size")
+plt.ylabel("Wheel Base")
+plt.xlabel("Engine Size")
+plt.show()
